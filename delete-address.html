@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercice Formulaire</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        
+        <h1> Resultat : </h1>
+        <form action="delete-address.php" method="post">
+            <fieldset>
+                <label for="id">
+                    ID
+                </label>
+                <input type="number" step="1" name="id" id="id" />
+            </fieldset>
+            
+            <fieldset>
+                <button type="submit">
+                    Envoyer
+                </button>
+            </fieldset>
+        </form>
+        <p>
+            <?= $result; ?>
+        </p>
+    </body>
+</html>

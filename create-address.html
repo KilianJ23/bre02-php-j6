@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercice Formulaire</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        
+        <h1> Resultat : </h1>
+        <form action="create-address.php" method="post">
+            <fieldset>
+                <label for="street">
+                    Street
+                </label>
+                <input type="text" step="1" name="street" id="street" />
+            </fieldset>
+            <fieldset>
+                <label for="city">
+                    City
+                </label>
+                <input type="text" step="2" name="city" id="city" />
+            </fieldset>
+            <fieldset>
+                <label for="zipcode">
+                    Zipcode
+                </label>
+                <input type="text" step="3" name="zipcode" id="zipcode" />
+            </fieldset>
+            <fieldset>
+                <button type="submit">
+                    Envoyer
+                </button>
+            </fieldset>
+        </form>
+        <p>
+            <?= $result; ?>
+        </p>
+    </body>
+</html>
